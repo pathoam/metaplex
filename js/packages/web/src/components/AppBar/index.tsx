@@ -118,9 +118,12 @@ export const AppBar = () => {
   const { connected } = useWallet();
   return (
     <>
-      <div id="mobile-navbar">
-        <LogoLink />
+      <div className="app-left app-bar-box">
+        {window.location.hash !== '#/analytics' && <Notifications />}
+        <div className="divider-centered" />
+
         <MetaplexMenu />
+
       </div>
       <div id="desktop-navbar">
         <div className="app-left">

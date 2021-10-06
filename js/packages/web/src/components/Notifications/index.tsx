@@ -568,8 +568,10 @@ export function Notifications() {
       content={content}
       trigger="click"
     >
-      <h1 className="title">Dawson Racing</h1>
+      <img src="/dawson.png" width="160px" />
+
     </Popover>
+    
   );
 
   if (notifications.length === 0) return justContent;
